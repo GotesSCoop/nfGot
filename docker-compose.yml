@@ -4,7 +4,7 @@ services:
     build: ./
     image: gotes/nfgot
     ports:
-      - "9995/udp"
+      - "9995:9995/udp"
     restart: always
     volumes:
       - ./netflow:/srv/netflow
