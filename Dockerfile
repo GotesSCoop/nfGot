@@ -13,4 +13,4 @@ VOLUME /srv/netflow
 
 EXPOSE 9995/udp
 
-ENTRYPOINT ["/usr/bin/nfcapd","-w","-l","/srv/netflow/","-p","9995"]
+ENTRYPOINT ["/usr/bin/nfcapd","-z","-w","-l","/srv/netflow/","-p","9995"]
