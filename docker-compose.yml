@@ -1,0 +1,10 @@
+version: "2"
+services:
+  nfgot:
+    build: ./
+    image: gotes/nfgot
+    ports:
+      - "9995/udp"
+    restart: always
+    volumes:
+      - ./netflow:/srv/netflow
